@@ -14,7 +14,8 @@ h1{margin:0;font-size:22px;letter-spacing:.5px}
 .bar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);padding:12px 28px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 input[type=search]{flex:1;min-width:120px;padding:8px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px;outline:none}
 input[type=search]:focus{border-color:var(--gold)}
-.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}`r`n.chip{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:20px;padding:4px 12px;font-size:12.5px;cursor:pointer;user-select:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:20px;padding:4px 12px;font-size:12.5px;cursor:pointer;user-select:none}
 .chip.on{background:var(--brick);color:#fff;border-color:var(--brick)}
 .hint{color:var(--muted);font-size:12.5px}
 main{padding:22px 28px 60px;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
@@ -43,7 +44,8 @@ h4{margin:18px 0 8px;font-size:14px;color:var(--brick);border-left:3px solid var
 .kv{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
 .close{float:right;background:transparent;border:1px solid rgba(255,255,255,.6);color:#fff;border-radius:8px;padding:3px 10px;cursor:pointer;font-size:13px}
 footer{color:var(--muted);font-size:12px;padding:0 28px 40px}
-@media (max-width:640px){header{padding:18px 14px 14px}h1{font-size:19px}main{padding:14px 14px 50px;grid-template-columns:1fr}.bar{padding:10px 14px;display:block}.bar input[type=search]{width:100%;margin-bottom:8px}.bar .chips{margin-top:4px}.bar .hint{display:block;margin-bottom:6px}footer{padding:0 14px 30px}.sheet-body{padding:14px}.overlay{padding:10px}}`r`n@media print{.bar,.overlay{display:none!important}main{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){header{padding:18px 14px 14px}h1{font-size:19px}main{padding:14px 14px 50px;grid-template-columns:1fr}.bar{padding:10px 14px;display:block}.bar input[type=search]{width:100%;margin-bottom:8px}.bar .chips{margin-top:4px}.bar .hint{display:block;margin-bottom:6px}footer{padding:0 14px 30px}.sheet-body{padding:14px}.overlay{padding:10px}}
+@media print{.bar,.overlay{display:none!important}main{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -53,7 +55,8 @@ footer{color:var(--muted);font-size:12px;padding:0 28px 40px}
 </header>
 <div class="bar">
   <input type="search" id="q" placeholder="搜作品名 / 作者 / 关键词…">
-  <span class="hint" id="hint"></span>`r`n  <div class="chips" id="chips"></div>
+  <span class="hint" id="hint"></span>
+  <div class="chips" id="chips"></div>
 </div>
 <main id="grid"></main>
 <footer>点击任意作品查看全部图片与原文 · 在线作品库 · 持续更新，不需要登录</footer>
